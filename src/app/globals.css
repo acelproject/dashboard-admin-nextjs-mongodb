@@ -22,3 +22,7 @@
     text-wrap: balance;
   }
 }
+
+table td {
+  @apply p-[10px];
+}
