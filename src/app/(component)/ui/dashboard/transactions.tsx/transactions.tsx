@@ -7,7 +7,7 @@ import noAvatar from "@/public/noavatar.png";
 const Transactions = () => {
   return (
     <div className="bg-bgSoft p-[20px] rounded-md">
-      <h2 className="mb-[20px] font-normal text-textSoft">
+      <h2 className="mb-[20px] text-xl font-normal text-textSoft">
         Latest Transactions
       </h2>
       <table className="w-full">
