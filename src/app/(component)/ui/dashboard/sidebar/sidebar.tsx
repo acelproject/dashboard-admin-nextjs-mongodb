@@ -10,6 +10,7 @@ import {
   MdOutlineSettings,
   MdHelpCenter,
   MdLogout,
+  MdClose,
 } from "react-icons/md";
 import MenuLink from "./menuLink/menuLink";
 import Image from "next/image";
@@ -80,20 +81,25 @@ const menuItems = [
 // image
 import noAvatar from "@/public/noavatar.png";
 
-const Sidebar = () => {
+const Sidebar = ({ closeSidebar,setCloseSidebar,}: { closeSidebar: boolean,setCloseSidebar:any}) => {
   return (
-    <div className="flex flex-col gap-y-5 my-5">
-      <div className="flex gap-x-4 items-center">
-        <Image
-          src={noAvatar}
-          alt=""
-          width={50}
-          height={50}
-          className="rounded-full object-cover"
-        />
-        <div className="flex flex-col leading-5">
-          <span>Marchel</span>
-          <span className="text-textSoft">Administrator</span>
+    <div className={` md:flex flex-col gap-y-5 `}>
+      <div className="flex justify-between mb-5 md:mb-0">
+        <div className="flex gap-x-4 items-center">
+          <Image
+            src={noAvatar}
+            alt=""
+            width={50}
+            height={50}
+            className="rounded-full object-cover"
+          />
+          <div className="flex flex-col leading-5">
+            <span>Marchel</span>
+            <span className="text-textSoft">Administrator</span>
+          </div>
+        </div>
+        <div className="md:hidden flex">
+          <MdClose onClick={()=>setCloseSidebar(!closeSidebar)}/>
         </div>
       </div>
       <ul className="flex flex-col gap-y-4">
@@ -105,12 +111,12 @@ const Sidebar = () => {
             <div className="flex flex-col gap-y-1">
               {item.list.map((listItem, i) => (
                 <MenuLink item={listItem} key={i} />
-              ))} 
+              ))}
             </div>
           </li>
         ))}
         <button className="flex items-center gap-x-2 hover:bg-[#2e374a] rounded-md px-5 py-4 cursor-pointer">
-          <MdLogout/>
+          <MdLogout />
           Logout
         </button>
       </ul>

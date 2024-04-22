@@ -7,7 +7,9 @@ import { MdPlayCircleFilled, MdReadMore } from "react-icons/md";
 
 const RightBar = () => {
   return (
-    <div className=" ">
+    <div
+      className={`md:static  left-0 md:px-0 px-5 md:bg-none`}
+    >
       <div className="relative py-[20px] px-[24px] rounded-md mb-[20px] bg-gradient-to-t from-[#182237] to-[#253352] ">
         <div className="absolute bottom-0 right-0 w-[50%] h-[50%]">
           <Image
@@ -19,7 +21,9 @@ const RightBar = () => {
         </div>
         <div className="flex flex-col gap-y-[24px]">
           <span className="font-bold">🔥 Available Now</span>
-          <h3 className="font-bold text-[20px] leading-7 text-white">How to use the new version of the admin dashboard?</h3>
+          <h3 className="font-bold text-[20px] leading-7 text-white">
+            How to use the new version of the admin dashboard?
+          </h3>
           <span className="text-textSoft">Take 4 minutes to learn</span>
           <p className="text-textSoft">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae quam
