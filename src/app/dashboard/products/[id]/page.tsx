@@ -5,14 +5,14 @@ import noAvatar from "@/public/noavatar.png";
 
 const DetailUserPage = () => {
   return (
-    <div className="flex gap-[50px] mt-[20px]">
+    <div className="flex md:flex-wrap flex-col gap-[50px] mt-[20px]">
       <div className="flex-[1]  p-[20px] flex flex-col items-center bg-bgSoft rounded-lg font-bold text-textSoft h-max">
-        <div className="w-[300px] h-[300px] relative rounded-lg overflow-hidden mb-[20px]">
+        <div className="md:w-[300px] md:h-[300px] w-[200px] h-[200px] relative rounded-lg overflow-hidden mb-[20px]">
           <Image src={noAvatar} alt="" className="object-cover" fill />
         </div>
         Marchel Lumimpah
       </div>
-      <div className="flex-[3] p-[20px] bg-bgSoft rounded-lg">
+      <div className="flex-[3] md:p-[20px] py-3 px-4 bg-bgSoft rounded-lg">
         <form action="" className="flex flex-col">
           <label htmlFor="" className="text-[12px]">
             Title
@@ -20,7 +20,7 @@ const DetailUserPage = () => {
           <input
             type="text"
             name="title"
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
             placeholder="Iphone"
           />
           <label htmlFor="" className="text-[12px]">
@@ -29,7 +29,7 @@ const DetailUserPage = () => {
           <input
             type="number"
             name="price"
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
             placeholder="Rp. 9.999.999"
           />
           <label htmlFor="" className="text-[12px]">
@@ -38,7 +38,7 @@ const DetailUserPage = () => {
           <input
             type="number"
             name="stock"
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
             placeholder="23"
           />
           <label htmlFor="" className="text-[12px]">
@@ -47,7 +47,7 @@ const DetailUserPage = () => {
           <input
             type="text"
             name="color"
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
             placeholder="black"
           />
           <label htmlFor="" className="text-[12px]">
@@ -56,7 +56,7 @@ const DetailUserPage = () => {
           <input
             type="text"
             name="size"
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
             placeholder="xx"
           />
 
@@ -66,7 +66,7 @@ const DetailUserPage = () => {
           <select
             name="cat"
             id="cat"
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
           >
             <option value="kitchen">Kitchen</option>
             <option value="computers">Computers</option>
@@ -77,14 +77,13 @@ const DetailUserPage = () => {
           <textarea
             name="desc"
             id="desc"
-            rows={10}
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border h-28 border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
             placeholder="Description"
           ></textarea>
           {/* button */}
           <button
             type="submit"
-            className="w-full p-[20px] rounded-lg text-white cursor-pointer mt-10 bg-[teal]"
+            className="w-full md:p-[20px] py-3 px-4 rounded-lg text-white cursor-pointer mt-10 bg-[teal]"
           >
             Submit
           </button>

@@ -7,7 +7,7 @@ import noAvatar from "@/public/noavatar.png";
 
 const User = () => {
   return (
-    <div className="my-5 bg-bgSoft p-[20px] rounded-lg">
+    <div className="w-full my-5 bg-bgSoft p-[20px] rounded-lg">
       <div className="flex items-center justify-between">
         <Search placeholder="Search for a user..." />
         <Link href={`/dashboard/users/add-user`}>
@@ -16,7 +16,8 @@ const User = () => {
           </button>
         </Link>
       </div>
-      <table className="w-full mt-5">
+      <div className="w-full overflow-x-scroll md:overflow-visible">
+      <table className="w-full mt-5   ">
         <thead>
           <tr>
             <th  className="text-start ps-2">Name</th>
@@ -30,7 +31,7 @@ const User = () => {
         <tbody>
           <tr>
             <td>
-              <div className="flex items-center gap-[10px]">
+              <div className="flex md:flex-row flex-col gap-[10px] items-start md:items-center">
                 <Image
                   src={noAvatar}
                   alt=""
@@ -60,6 +61,7 @@ const User = () => {
           </tr>
         </tbody>
       </table>
+      </div>
       <div>
       <Pagination/>
       </div>

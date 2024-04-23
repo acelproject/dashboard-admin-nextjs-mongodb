@@ -11,7 +11,7 @@ const RightBarMobile = () => {
       <SheetTrigger>
         {/* <AlignJustify className="cursor-pointer" /> */}🚀
       </SheetTrigger>
-      <SheetContent className="overflow-scroll">
+      <SheetContent className="overflow-scroll border-none">
         <div className="md:static absolute left-0 md:px-0 px-5 pt-12 md:bg-none bg-bg top-0  ">
           <div className="relative py-[20px] px-[24px] rounded-md mb-[20px] bg-gradient-to-t from-[#182237] to-[#253352] ">
             <div className="absolute bottom-0 right-0 w-[50%] h-[50%]">

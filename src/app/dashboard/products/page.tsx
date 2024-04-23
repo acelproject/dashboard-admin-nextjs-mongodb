@@ -8,7 +8,7 @@ import Search from '@/app/(component)/ui/dashboard/search/search';
 
 const Products = () => {
   return (
-    <div className="my-5 bg-bgSoft p-[20px] rounded-lg">
+    <div className="w-full my-5 bg-bgSoft p-[20px] rounded-lg">
       <div className="flex items-center justify-between">
         <Search placeholder="Search for a product..." />
         <Link href={`/dashboard/products/add-product`}>
@@ -17,6 +17,7 @@ const Products = () => {
           </button>
         </Link>
       </div>
+      <div className='w-full overflow-x-scroll md:overflow-visible'>
       <table className="w-full mt-5">
         <thead>
           <tr>
@@ -31,7 +32,7 @@ const Products = () => {
         <tbody>
           <tr>
             <td>
-              <div className="flex items-center gap-[10px]">
+              <div className="flex md:flex-row flex-col gap-[10px] items-start md:items-center">
                 <Image
                   src={noAvatar}
                   alt=""
@@ -61,6 +62,7 @@ const Products = () => {
           </tr>
         </tbody>
       </table>
+      </div>
       <div>
       <Pagination/>
       </div>

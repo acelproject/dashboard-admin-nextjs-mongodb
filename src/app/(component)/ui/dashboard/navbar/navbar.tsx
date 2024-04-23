@@ -14,7 +14,7 @@ import RightBarMobile from "../rightbar/rightbarMobile";
 const Navbar = ({ setCloseSidebar,closeSidebar }: { setCloseSidebar: any,closeSidebar:boolean }) => {
   const pathname = usePathname();
   return (
-    <div className="sticky top-4 z-40">
+    <div className="sticky top-0 z-40">
       <div className="w-full flex  md:flex-row flex-col md:gap-y-0 gap-y-4 items-start  md:items-center justify-between bg-bgSoft rounded-md py-4 px-5">
         <div className="capitalize text-xl font-medium order-1 flex items-center gap-x-4">
           <MdMenu onClick={()=>setCloseSidebar(!closeSidebar)} />

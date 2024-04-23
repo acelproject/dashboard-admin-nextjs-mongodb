@@ -6,9 +6,9 @@ import noAvatar from "@/public/noavatar.png";
 const DetailUserPage = () => {
 
   return (
-    <div className="flex gap-[50px] mt-[20px]">
+    <div className="flex md:flex-wrap flex-col gap-[50px] mt-[20px]">
       <div className="flex-[1]  p-[20px] flex flex-col items-center bg-bgSoft rounded-lg font-bold text-textSoft h-max">
-        <div className="w-[300px] h-[300px] relative rounded-lg overflow-hidden mb-[20px]">
+        <div className="md:w-[300px] md:h-[300px] w-[200px] h-[200px] relative rounded-lg overflow-hidden mb-[20px]">
           <Image src={noAvatar} alt="" className="object-cover" fill />
         </div>
         Marchel Lumimpah
@@ -19,42 +19,42 @@ const DetailUserPage = () => {
           <input
             type="text"
             name="username"
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
             placeholder="Marchel Lumimpah"
           />
           <label htmlFor="" className="text-[12px]">Email</label>
           <input
             type="email"
             name="email"
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
             placeholder="aclprc@gmail.com"
           />
           <label htmlFor="" className="text-[12px]">Password</label>
           <input
             type="password"
             name="password"
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
             placeholder="Password"
           />
           <label htmlFor="" className="text-[12px]">Phone</label>
           <input
             type="text"
             name="phone"
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
             placeholder="082238477433"
           />
           <label htmlFor="" className="text-[12px]">Address</label>
           <textarea
             name="address"
             id=""
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
             placeholder="Matako"
           ></textarea>
           <label htmlFor="" className="text-[12px]">Is Admin?</label>
           <select
             name="isAdmin"
             id="isAdmin"
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
           >
             <option value="true">Yes</option>
             <option value="false">No</option>
@@ -63,13 +63,13 @@ const DetailUserPage = () => {
           <select
             name="isAdmin"
             id="isAdmin"
-            className="p-[20px] border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
+            className="md:p-[20px] py-3 px-4 border border-[#2e374a] rounded-md bg-bg text-white my-[10px] mx-[0]"
           >
             <option value="true">Yes</option>
             <option value="false">No</option>
           </select>
           {/* button */}
-          <button type="submit" className="w-full p-[20px] rounded-lg text-white cursor-pointer mt-10 bg-[teal]">Submit</button>
+          <button type="submit" className="w-full md:p-[20px] py-3 px-4 rounded-lg text-white cursor-pointer mt-10 bg-[teal]">Submit</button>
         </form>
       </div>
     </div>
